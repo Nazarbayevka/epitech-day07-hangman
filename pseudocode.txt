@@ -1,0 +1,35 @@
+START
+
+Choose a random English word
+Set penalties to 0
+Create an empty set of guessed letters
+
+WHILE penalties are less than 12:
+    Display guessed letters and underscores
+    Display the number of penalties
+
+    Ask the player for a letter or a complete word
+    Convert the answer to lowercase
+
+    IF the answer is the complete word:
+        Display a winning message
+        STOP
+
+    IF the answer contains more than one letter:
+        Add 5 penalties
+
+    ELSE IF the letter is inside the word:
+        Add the letter to guessed letters
+        Reveal every occurrence of the letter
+
+    ELSE:
+        Add 1 penalty
+
+    IF every letter has been revealed:
+        Display a winning message
+        STOP
+
+Display "You lose!"
+Display the hidden word
+
+END
